@@ -2,5 +2,7 @@
 
 ### Team
 
-* trudy akortia
-* ... 
+* Trudy Akortia
+* Innocent Fiadu
+* Emmanuel Bonsu
+* Dim Arinze
