@@ -121,7 +121,7 @@ body
 }
 #m1
 {
-	color: rgb(18, 18, 65);
+	color: white;
 	text-align: center;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	
@@ -160,12 +160,10 @@ form input[type="text"]
 .sub a
 {
 	
-	margin: 0px 0px 0px 20px;
+	margin: 0px 0px 0px 40px;
 	font-family: Cambria;
-	font-size: 17px;
+	font-size: 20px;
 	background-color: transparent;
-	border: 1px solid rgb(18, 18, 65);
-	border-radius: 5px;
 	cursor: pointer;
 	color:  white;
 	text-decoration:none;
