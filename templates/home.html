@@ -3,15 +3,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link href="../static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
     <title>Weather Station</title>
 </head>
 <body>
     <div id="big_wapper">
             <img src ="../static/pics/1.png">
 		<ul id="menu1">
-                    <li id ="nav"><a href="../templates/home.html">Home </a></li> |
-                    <li id ="nav"><a href="../templates/weather.html">Weather</a></li> |
+                    <li id ="nav"><a href="{{ url_for('index') }}">Home </a></li> 
+                    <li id ="nav"><a href="{{ url_for('weather') }}">Weather</a></li>
                     <li id = "nav"><a href="../templates/about.html">About</a></li>
                 </ul>
              
@@ -22,6 +22,16 @@
             To know more about Weather Station, sign up to our station.</p> 
            <p id ="nav1"><a href="../templates/signup.html"> Sign Up</a></p>
     </div>    
+    
+        		<table border=1>
+			{% for key, value in index.items() %}
+				<tr>
+					<th> {{ key }}</th>
+					<td>{{ value }}</td>
+				</tr>
+			{% endfor %}
+    `       </table>
+    
 
     <footer class="footer">
         Weather Station &copy; 2019
