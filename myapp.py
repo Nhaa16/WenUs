@@ -1,3 +1,4 @@
+
 from flask import Flask
 from flask import render_template, url_for
 app = Flask(__name__)
@@ -56,7 +57,6 @@ def submit():
 #    snow = w.get_snow()
     tem = tempreture
     return render_template('submit.html', index = tem)
-
 
 
 if __name__ == '__main__':
