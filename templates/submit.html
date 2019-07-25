@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="big_wapper">
-            <img src ="../static/pics/1.png" height="150px" width="195px">
+            <img src ="../static/images/1.png" height="150px" width="195px">
              <nav>
                 <ul id="menu1">
                     <li id ="nav"><a href="{{ url_for('index') }}">Home</a></li> |
@@ -18,8 +18,8 @@
             </nav>    
     </div>
     <div id="show">
-    <div id="message1">
-       <h1 id ="m1">Weather Results</h1> <a><img src ="../static/pics/2.png" height="100px" width="100px"></a></h1>
+    <div id="message2">
+       <center><h1 id ="m1">Weather Results</h1> <a><img src ="../static/images/2.png" height="100px" width="100px"></a></h1></center>
 
                 <p>
                     <center>
@@ -27,6 +27,7 @@
 			{% for key, value in index.items() %}
 				<tr>
 					<th> {{ key }}</th>
+                    <td></td>
 					<td>{{ value }}</td>
 				</tr>
 			{% endfor %}

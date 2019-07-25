@@ -2,6 +2,7 @@ from flask import Flask
 from flask import render_template, url_for, request, redirect
 app = Flask(__name__)
 import pyowm
+from datetime import datetime
 from gpiozero import LED
 from time import sleep
 
@@ -33,15 +34,21 @@ def submit():
     tempreture = w.get_temperature()
     presh = w.get_pressure()
     clud = w.get_clouds()
-    ran = w.get_rain()
-    snow = w.get_snow()
+    ran = w.get_rain() 
+    snow = w.get_snow()                          
+    sunr = w.get_sunrise_time('iso')
+    suns = w.get_sunset_time('iso')
+    style = w.get_detailed_status()
+    ref = w.get_reference_time(timeformat='iso')
     
-    tem = {"City": user_input_1, "Country": user_input_2, "Wind" : winds, "Humidity" : humidities, "Temperature" : tempreture, "Pressure" : presh, "Cloud" : clud, "Rain" : ran, "Snow" : snow}
+    tem = {"City": user_input_1, "Country": user_input_2, "Wind" : winds, "Humidity" : humidities, "Temperature" : tempreture,
+           "Pressure" : presh, "Cloud" : clud, "Rain" : ran, "Snow" : snow, "Sunrise Time" : sunr, "Sunset Time" : suns,
+            "Cloud Formation" : style, "Referenced Time" : ref}
     
     
     return render_template('submit.html', index = tem)
  
-@app.route("/about", methods=['GET', 'POST'])
+@app.route("/about")
 def about():
     return render_template('about.html')
 

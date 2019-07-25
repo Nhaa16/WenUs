@@ -5,10 +5,11 @@
     <meta charset="utf-8" />
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
     <title>Weather Station</title>
+    <link href="../static/images/1.png" rel="icon" type="image/ico">
 </head>
 <body>
     <div id="big_wapper">
-            <img src ="../static/pics/1.png">
+            <img src ="../static/images/1.png">
 		<ul id="menu1">
                    
                     <li id ="nav"><a href="{{ url_for('weather') }}">Weather</a></li>
@@ -16,7 +17,10 @@
                 </ul>
              
     </div>
+    
+    
     <div id="message">
+        
         <h1 class="heading">Welcome to Weather Station</h1>
         <p class="lead">Get all your weather information from Weather Station <br>
             To know more about Weather Station, sign up to our station.</p> 
