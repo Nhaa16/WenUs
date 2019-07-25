@@ -121,7 +121,7 @@ body
 }
 #m1
 {
-	color: rgb(18, 18, 65);
+	color: white;
 	text-align: center;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	
@@ -157,22 +157,20 @@ form input[type="text"]
 	margin-bottom: 30px;
 }
 
-.sub a
+.sub b
 {
 	
 	margin: 0px 0px 0px 20px;
 	font-family: Cambria;
 	font-size: 17px;
 	background-color: transparent;
-	border: 1px solid rgb(18, 18, 65);
-	border-radius: 5px;
 	cursor: pointer;
 	color:  white;
 	text-decoration:none;
 }
 
-a:hover
-{
-    color:#764d76;
+.sub button : hover{
+    background-color:lightgreen;
+    
 }
 

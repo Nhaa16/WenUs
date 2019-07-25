@@ -20,14 +20,14 @@
     <div id="show">
     <div id="message1">
        <h1 id ="m1">Weather</h1> <a><img src ="../static/pics/2.png" height="100px" width="100px"></a></h1>
-        <form>
+        <form name+"weatherForm" action="/weather/submit"  method="POST" enctype="multipart/form-data">
             <p>
                 <center><input type="text" name="city" placeholder="Enter City..." required></center>
             </p>
             <p>
                 <center><input type="text" name="country" placeholder="Enter Country..."required></center>
             </p>
-            <div class="sub"><a href ="{{ url_for('submit') }}" style="height: 80px; width: 80%;">Submit</a>
+            <div class="sub"><a href ="{{ url_for('submit') }}" style="height:50px; width:225px; background:transparent; border-style:dotted; border-radius:8px;">Submit</a>
 
 
             </div>
