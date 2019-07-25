@@ -7,33 +7,7 @@ from time import sleep
 
 @app.route('/')
 def index():
-
-#    location = 'London, UK'
-#    apikey = '51c6723dd2f51626dd33896729e79676'
-#    owm = pyowm.OWM(apikey)
-#    observation = owm.weather_at_place(location)
-#    w = observation.get_weather()
-#
-#
-#
-#    winds = w.get_wind()
-#    humidities = w.get_humidity()
-#    tempreture = w.get_temperature()
-#    presh = w.get_pressure()
-#    clud = w.get_clouds()
-#    ran = w.get_rain()
-#    snow = w.get_snow()
-#    
-#
-#    tem = {"wind" : winds, "humidity" : humidities, "temperature" : tempreture, "pressure" : presh, "cloud" : clud, "rain" : ran, "snow" : snow}
-#    
-##    tem = winds, humidities, tempreture, presh, clud, ran, snow
-##    tem = []   
-    
-    
-
     return render_template('home.html')
-
 
 
 @app.route("/weather", methods=['GET', 'POST'])
@@ -67,7 +41,6 @@ def submit():
 #    tem = winds, humidities, tempreture, presh, clud, ran, snow
 #    tem = []
     return render_template('submit.html', index = tem)
-
  
 
 if __name__ == '__main__':
