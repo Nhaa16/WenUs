@@ -19,10 +19,11 @@
     </div>
     <div id="show">
     <div id="message1">
-       <h1 id ="m1">Weather Results</h1><h1 id ="m1">Winds</h1> <a><img src ="../static/pics/2.png" height="100px" width="100px"></a></h1>
+       <h1 id ="m1">Weather Results</h1> <a><img src ="../static/pics/2.png" height="100px" width="100px"></a></h1>
 
                 <p>
-                    <table border=1>
+                    <center>
+                    <table>
 			{% for key, value in index.items() %}
 				<tr>
 					<th> {{ key }}</th>
@@ -30,6 +31,7 @@
 				</tr>
 			{% endfor %}
     `       </table>
+            </center>
                 
                 </p>
     </div>
