@@ -33,7 +33,7 @@ def submit():
     humidities = w.get_humidity()
     tempreture = w.get_temperature()
     presh = w.get_pressure()
-    clud = w.get_clouds()
+    clud = w.get_clouds() 
     ran = w.get_rain() 
     snow = w.get_snow()                          
     sunr = w.get_sunrise_time('iso')
@@ -43,7 +43,7 @@ def submit():
     
     tem = {"City": user_input_1, "Country": user_input_2, "Wind" : winds, "Humidity" : humidities, "Temperature" : tempreture,
            "Pressure" : presh, "Cloud" : clud, "Rain" : ran, "Snow" : snow, "Sunrise Time" : sunr, "Sunset Time" : suns,
-            "Cloud Formation" : style, "Referenced Time" : ref}
+            "Weather View" : style, "Referenced Time" : ref}
     
      
     return render_template('submit.html', index = tem)

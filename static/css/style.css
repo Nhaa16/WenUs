@@ -50,6 +50,20 @@ body
     padding:60px;
     height:580px;
 }
+
+#mess
+{
+    background-color: rgba(0, 3, 0, 0.4);
+    padding:20px;
+    height:380px;
+    width:50%;
+
+}
+
+#mess:hover
+{
+    background-color: white;
+}
 .heading
 {
     text-align:center;
@@ -64,7 +78,7 @@ body
 {
     text-align:center;
     font-family:calibri;
-    font-size:50px;
+    font-size:30px;
     color:rgb(181, 181, 197);
     
 }
@@ -103,6 +117,34 @@ body
     border-radius:3px;
     color: grey;
 }
+
+#nav0
+{
+    text-decoration:none;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align:center;
+    background-color: #764d76;
+    padding:6px;
+    border-radius:3px;
+    width: 10%;
+}
+
+
+#nav0 a
+{
+    text-decoration: none;
+    color: orange;
+}
+
+#nav0 a:hover
+{
+    border-radius:3px;
+    color: grey;
+}
+
+
 .footer
 {
     height: 30px;
