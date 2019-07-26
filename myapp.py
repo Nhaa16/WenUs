@@ -28,6 +28,7 @@ def submit():
     owm = pyowm.OWM(apikey)
     observation = owm.weather_at_place(place)
     w = observation.get_weather()
+    
 
     winds = w.get_wind()
     humidities = w.get_humidity()
