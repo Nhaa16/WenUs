@@ -4,22 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
-    <title>Weather Station</title>
+    <title>Online Weather Station</title>
+    <link href="../static/images/1.png" rel="icon" type="image/ico">
 </head>
 <body>
     <div id="big_wapper">
             <img src ="../static/images/1.png" height="150px" width="195px">
              <nav>
                 <ul id="menu1">
-                    <li id ="nav"><a href="{{ url_for('index') }}">Home</a></li> |
- |
-                    <li id = "nav"><a href="{{ url_for('about') }}">About</a></li>
+                    |||<li id ="nav"><a href="{{ url_for('index') }}">Home</a></li>|||
+
+                    <li id = "nav"><a href="{{ url_for('about') }}">About</a></li>|||
                 </ul>
             </nav>    
     </div>
     <div id="show">
     <div id="message1">
-       <h1 id ="m1">Weather</h1> <a><img src ="../static/images/2.png" height="100px" width="100px"></a></h1>
+       <h1 id ="m1">Check Weather</h1> <a><img src ="../static/images/2.png" height="100px" width="100px"></a></h1>
         <form action="/weather/submit"  method="POST" enctype="multipart/form-data">
                 <center><input type="text" name="city" placeholder="  Enter City..." required></center>
                 <center><input type="text" name="country" placeholder="  Enter Country..."required></center>

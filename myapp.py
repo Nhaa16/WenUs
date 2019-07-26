@@ -45,7 +45,7 @@ def submit():
            "Pressure" : presh, "Cloud" : clud, "Rain" : ran, "Snow" : snow, "Sunrise Time" : sunr, "Sunset Time" : suns,
             "Cloud Formation" : style, "Referenced Time" : ref}
     
-    
+     
     return render_template('submit.html', index = tem)
  
 @app.route("/about")
