@@ -4,40 +4,34 @@
 <head>
     <meta charset="utf-8" />
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
-    <title>Weather Station</title>
+    <title>Online Weather Station</title>
+    <link href="../static/images/1.png" rel="icon" type="image/ico">
 </head>
 <body>
     <div id="big_wapper">
-            <img src ="../static/pics/1.png" height="150px" width="195px">
+            <img src ="../static/images/1.png" height="150px" width="195px">
              <nav>
                 <ul id="menu1">
-                    <li id ="nav"><a href="{{ url_for('index') }}">Home</a></li> |
-                    <li id ="nav"><a href="{{ url_for('weather') }}">Weather</a></li> |
-                    <li id = "nav"><a href="../templates/about.html">About</a></li>
+                    |||<li id ="nav"><a href="{{ url_for('index') }}">Home</a></li>|||
+
+                    <li id = "nav"><a href="{{ url_for('about') }}">About</a></li>|||
                 </ul>
             </nav>    
     </div>
     <div id="show">
     <div id="message1">
-       <h1 id ="m1">Weather</h1> <a><img src ="../static/pics/2.png" height="100px" width="100px"></a></h1>
-        <form>
-            <p>
-                <center><input type="text" name="city" placeholder="Enter City..." required></center>
-            </p>
-            <p>
-                <center><input type="text" name="country" placeholder="Enter Country..."required></center>
-            </p>
-            <div class="sub"><a href ="{{ url_for('submit') }}" style="height: 80px; width: 80%;">Submit</a>
-
-
-            </div>
+       <h1 id ="m1">Check Weather</h1> <a><img src ="../static/images/2.png" height="100px" width="100px"></a></h1>
+        <form action="/weather/submit"  method="POST" enctype="multipart/form-data">
+                <center><input type="text" name="city" placeholder="  Enter City..." required></center>
+                <center><input type="text" name="country" placeholder="  Enter Country..."required></center>
+            <center><button id="but" type="submit">Submit</button></center>
         </form>
     </div>
     
 
     </div> 
     <footer class="footer">
-            Weather Station &copy; 2019
+            Weather Station &copy; 2019 By (WenUs)
         </footer>
        
     </body>

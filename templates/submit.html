@@ -4,34 +4,37 @@
 <head>
     <meta charset="utf-8" />
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
-    <title>Weather Station</title>
+    <title>Online Weather Station</title>
+    <link href="../static/images/1.png" rel="icon" type="image/ico">
 </head>
 <body>
     <div id="big_wapper">
-            <img src ="../static/pics/1.png" height="150px" width="195px">
+            <img src ="../static/images/1.png" height="150px" width="195px">
              <nav>
                 <ul id="menu1">
-                    <li id ="nav"><a href="{{ url_for('index') }}">Home</a></li> |
-                    <li id ="nav"><a href="{{ url_for('weather') }}">Weather</a></li> |
-                    <li id = "nav"><a href="../templates/about.html">About</a></li>
+                    |||<li id ="nav"><a href="{{ url_for('index') }}">Home</a></li> |||
+                    <li id ="nav"><a href="{{ url_for('weather') }}">Weather</a></li> |||
+                    <li id = "nav"><a href="{{ url_for('about') }}">About</a></li>|||
                 </ul>
             </nav>    
     </div>
     <div id="show">
-    <div id="message1">
-       <h1 id ="m1">Weather Results</h1><h1 id ="m1">Winds</h1> <a><img src ="../static/pics/2.png" height="100px" width="100px"></a></h1>
-
-                <p>
-                    <table border=1>
-			{% for key, value in index.items() %}
-				<tr>
-					<th> {{ key }}</th>
-					<td>{{ value }}</td>
-				</tr>
-			{% endfor %}
-    `       </table>
+    <div id="message2">
+       <center><h1 id ="m1">Weather Results</h1> <a><img src ="../static/images/2.png" height="100px" width="100px"></a></h1></center>
+                   
+                    <center>
+                    <table id="table">
+                            {% for key, value in index.items() %}
+                            <tr>
+                            <th> {{ key }}</th>
+                            <td>     ----    </td>
+                            <td>{{ value }}</td>
+                            </tr>
+                            {% endfor %}
+    `               </table>
+                    </center>
                 
-                </p>
+                
     </div>
     </div> 
     <footer class="footer">

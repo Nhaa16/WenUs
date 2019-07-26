@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+    <title>Online Weather Station</title>
+    <link href="../static/images/1.png" rel="icon" type="image/ico">
+</head>
+<body>
+    <div id="big_wapper">
+            <img src ="../static/images/1.png">
+		<ul id="menu1">
+                    ||||<li id ="nav"><a href="{{ url_for('index') }}">Home </a></li> ||||
+                    <li id ="nav"><a href="{{ url_for('weather') }}">Weather</a></li>||||
+           
+                </ul>
+             
+    </div>
+    <div id="message">
+        <center><h1 class="heading1"> ABOUT WenUs ONLINE WEATHER STATION</h1></center>
+        <P class="lead" style="text-align:center;">WenUs ONLINE WEATHER STATION is a facility, hosted in a server called Heroku with a weather API fuction within call PYOWM for retrieving atmospheric 
+         information for weather forecasts and to study the weather and climate.<br> The forecasts given include temperature, 
+        atmospheric pressure, humidity, wind speed, wind direction, time referenced, etc.
+          Online measurements are taken at least once an hour.<br></P>
+          
+        <b><h3 class="heading1">WHY ONLINE WEATHER STATION WEB APPLICATION</h3></b><p class="lead" style="text-align:left;">There are several reasons why weather forecasts are important. They would certainly be missed if they were not there. 
+        It is a product of science that impacts the lives of many people. 
+        The following is a list of various reasons (but definately not all reasons) why weather forecasts are important: <br><br>
+        1. Helps people prepare for how to dress (i.e. warm weather, cold weather, windy weather, rainy weather).<br>
+		2. Helps businesses and people plan for power production and how much power to use (i.e. power companies,<br> where to set thermostat)<br>
+		3. Helps people prepare if they need to take extra gear to prepare for the weather (i.e. umbrella, rain coat,<br> sun screen)<br>
+		4. Helps people plan outdoor activities (i.e. to see if rain/storms/cold weather will impact outdoor event)<br>
+		5. Helps curious people to know what sort of weather can be expected (i.e. a snow on the way, severe storms)<br>
+            </p> 
+           <p id ="nav1"><a href="https://web.facebook.com/WenUs-376895686352714/"> Follow Us Here </a></p>
+    </div>    
+    
+        		
+    
+
+    <footer class="footer">
+        Weather Station &copy; 2019
+    </footer>
+
+</body>
+</html>        
+
